@@ -6,7 +6,12 @@ parallel-jobs = 1
 
 # you can use rvmm-config-gen to generate a config
 
-#patcher-args = "--legacy-options=options.json"
+patcher-args = """\
+  -oappIcon=`Revancify Red` \
+  -OdarkThemeBackgroundColor=`@android:color/black` \
+  -OappName=`YouTube` \
+  -oBackgroundColor=`android:color/transparent` \
+  """
 
 [YouTube]
 patches-source = "anddea/revanced-patches"
