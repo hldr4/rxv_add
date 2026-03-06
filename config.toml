@@ -1,5 +1,5 @@
 enable-module-update = true # set this to false if you do not want to receive updates for the module
-parallel-jobs = 1
+parallel-jobs = 3
 
 # add 'enabled = false' for not patching a specific app or remove it from the config
 # see https://github.com/j-hc/revanced-magisk-module/blob/main/CONFIG.md for more detailed explanations
@@ -10,6 +10,7 @@ parallel-jobs = 1
 patches-source = "anddea/revanced-patches"
 patches-version = "dev"
 cli-source = "MorpheApp/morphe-cli"
+cli-versoin = "dev"
 module-prop-name = "YT-RVX"
 rv-brand = "RVX anddea"
 build-mode = "both"
@@ -22,7 +23,7 @@ included-patches = "'Custom branding icon for YouTube' 'Custom branding name for
 excluded-patches = "'Append time stamps information' 'Custom header for YouTube' 'Spoof sreaming data' 'Custom double tap length' 'Custom package name' 'Enable wide search bar' 'Keep landscape mode' 'Layout switch' 'Translations for YouTube' 'Change player flyout panel toggles'"
 # version = "19.16.39"
 patcher-args = """\
-  -OappIcon='Revancify Red' \
+  -OappIcon='revancify_red' \
   -OdarkThemeBackgroundColor='@android:color/black' \
   -OappName='YouTube' \
   -OBackgroundColor='android:color/transparent' \
